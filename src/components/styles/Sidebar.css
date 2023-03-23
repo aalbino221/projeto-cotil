@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+#side > div > button {
+  color: black;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+#side > div > .active {
+  color: red;
+  border: 1px solid transparent;
+}
