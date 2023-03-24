@@ -1,12 +1,8 @@
 export default function Screen() {
   return (
-    <div
-      style={{ position: 'absolute', left: '35%', top: ' 10%' }}
-      className="flex-column d-flex"
-    >
+    <div>
       <img
-        className="rounded"
-        src="https://img.elo7.com.br/product/main/478DB53/par-de-aneis-patodavida-alianca-pato-casamento.jpg"
+        src="https://preview.redd.it/ojewmxeyumq61.jpg?width=640&crop=smart&auto=webp&v=enabled&s=ab00d93b9b0101377e8f309ea77fee682edaaf9c"
         alt=""
       />
     </div>

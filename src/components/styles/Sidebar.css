@@ -13,3 +13,34 @@
   color: red;
   border: 1px solid transparent;
 }
+
+@media (max-width: 992px) {
+  #side > div > button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    font-weight: 500;
+    padding: 0;
+  }
+
+  #side > div > button > i {
+    margin-left: 0.5rem;
+    border-bottom: 1px solid transparent;
+  }
+
+  #side > div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #side {
+    margin-top: auto;
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+}

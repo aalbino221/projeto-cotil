@@ -7,12 +7,12 @@ function App() {
     <div className="App">
       <Header />
       <div className="container-fluid full-height">
-        <div className="row d-flex flex-grow-1 h-100 overflow-auto">
-          <div className="col-2 p-0">
-            <Sidebar />
-          </div>
-          <div className="col-10">
+        <div className="row d-flex flex-grow-1 flex-column flex-sm-row h-100 overflow-auto">
+          <div className="col-lg-10 col-sm-12 order-sm-last flex-grow-1">
             <Screen />
+          </div>
+          <div className="col-lg-2 col-sm-12 p-0 order-sm-first">
+            <Sidebar />
           </div>
         </div>
       </div>

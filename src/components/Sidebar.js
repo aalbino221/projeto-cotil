@@ -6,7 +6,7 @@ export default function Sidebar() {
     <div className="border-end border-black d-flex flex-column flex-grow-1 h-100 overflow-auto p-4">
       <nav id="side" className="px-2">
         <div
-          className="nav nav-tabs d-flex flex-column row-gap-3 border-0"
+          className="nav nav-tabs d-flex flex-row flex-lg-column row-gap-3 border-0"
           id="nav-tab"
           role="tablist"
         >
