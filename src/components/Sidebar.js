@@ -52,7 +52,7 @@ export default function Sidebar() {
           <button
             className="nav-link border-bottom"
             id="nav-config-tab"
-            data-bs-toggle="tab"
+            data-bs-toggle="collapse"
             data-bs-target="#nav-config"
             type="button"
             role="tab"
@@ -62,6 +62,43 @@ export default function Sidebar() {
             <i className="fa-solid fa-gear me-2 fs-5" />
             Configurações
           </button>
+          <div className="collapse" id="nav-config">
+            <div className="card card-body d-flex flex-column align-items-center border-0 row-gap-3 p-0">
+              <button
+                className="nav-link bg-light ps-3 py-1 w-100 d-flex align-items-center"
+                id="nav-language"
+                type="button"
+                aria-controls="nav-favoritos"
+              >
+                <i className="fa-solid fa-globe mx-2" />
+                <select
+                  className="form-select form-select border-0 p-0 bg-light"
+                  aria-label="Default select example"
+                  id="select-lang"
+                >
+                  <option selected>Português (BR)</option>
+                  <option value="1">English (USA)</option>
+                  <option value="2">Espanõl (AR)</option>
+                  <option value="3">Deutsch (GER)</option>
+                </select>
+              </button>
+
+              <div className="form-check form-switch py-1 px-0 bg-light w-100 d-flex">
+                <label
+                  className="form-check-label ps-3"
+                  htmlFor="flexSwitchCheckDefault"
+                >
+                  <input
+                    className="form-check-input form-check-input-dark mx-1"
+                    type="checkbox"
+                    role="switch"
+                    id="flexSwitchCheckDefault"
+                  />
+                  Claro/Escuro
+                </label>
+              </div>
+            </div>
+          </div>
           <button
             className="nav-link border-bottom"
             id="nav-login-tab"

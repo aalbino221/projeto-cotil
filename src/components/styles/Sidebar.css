@@ -9,9 +9,28 @@
   font-weight: 600;
 }
 
-#side > div > .active {
+#side > div .active {
   color: red;
   border: 1px solid transparent;
+}
+
+#nav-config button,
+#nav-config label {
+  color: rgb(49, 49, 49);
+  font-weight: 600;
+}
+
+#select-lang > option,
+#select-lang {
+  color: rgb(48, 47, 47);
+  font-weight: 500;
+}
+
+.form-check-input-dark:checked {
+  background-color: #424242;
+}
+.form-check-input-dark:focus {
+  box-shadow: none;
 }
 
 @media (max-width: 992px) {
