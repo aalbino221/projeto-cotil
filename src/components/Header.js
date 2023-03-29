@@ -1,5 +1,6 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-export default function Header() {
+export default function Header({ setBar }) {
   return (
     <div className="container-fluid d-none d-sm-block">
       <nav className="navbar navbar-expand-lg navbar-light border-bottom border-black partial-height">
@@ -7,7 +8,12 @@ export default function Header() {
         <div className="col-2">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center justify-content-center">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
+              <a
+                className="nav-link"
+                aria-current="page"
+                href="#"
+                onClick={() => setBar()}
+              >
                 <i className="text-dark fa-solid fa-bars fs-4" />
               </a>
             </li>
