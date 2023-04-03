@@ -1,0 +1,16 @@
+@media(min-width: 1400px){
+    .cards{
+        max-width: 50%;      
+    }
+}
+
+.botaoX{
+    margin: -12px;
+}
+
+
+.tags{
+    margin: .2rem;
+}
+
+
