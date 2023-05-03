@@ -1,0 +1,28 @@
+@media (min-width: 1400px) {
+  .cards {
+    width: 50%;
+  }
+}
+
+.cards {
+  width: 570px;
+}
+
+.tags {
+  margin: 0.2rem;
+}
+
+@media (min-width: 768px) {
+  /* Desktop */
+  #img-newAnuncio {
+    height: 204px;
+    width: 352px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Mobile */
+  #img-newAnuncio {
+    height: 180px;
+  }
+}

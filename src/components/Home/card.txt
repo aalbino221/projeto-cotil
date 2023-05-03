@@ -1,0 +1,11 @@
+Titulo
+Descrição
+[Categorias]
+Localização
+Preço
+FotoAnunciante
+Anunciante
+Likes
+Deslikes
+Favorito
+Telefone

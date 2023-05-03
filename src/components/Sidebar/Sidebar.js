@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
-import './styles/Sidebar.css';
+import { NavLink } from 'react-router-dom';
+import './Sidebar.css';
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
-export default function Sidebar({ setCurrentTab, sideBar }) {
+export default function Sidebar({ sideBar }) {
   return (
     <div
       className={`border-end border-black d-flex flex-column flex-grow-1 h-100 overflow-auto p-4 ${sideBar}`}
@@ -13,48 +14,30 @@ export default function Sidebar({ setCurrentTab, sideBar }) {
           id="nav-tab"
           role="tablist"
         >
-          <button
-            className="nav-link active border-bottom"
-            id="nav-home-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#nav-home"
-            type="button"
-            role="tab"
-            aria-controls="nav-home"
-            aria-selected="true"
-            onClick={() => setCurrentTab('home')}
+          <NavLink
+            to="/"
+            activeclassname="active"
+            className="nav-link border-bottom fw-semibold"
           >
             <i className="fa-solid fa-house me-2 fs-5" />
             Home
-          </button>
-          <button
-            className="nav-link border-bottom"
-            id="nav-anuncios-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#nav-anuncios"
-            type="button"
-            role="tab"
-            aria-controls="nav-anuncios"
-            aria-selected="false"
-            onClick={() => setCurrentTab('my-ads')}
+          </NavLink>
+          <NavLink
+            to="/myAds"
+            activeclassname="active"
+            className="nav-link border-bottom fw-semibold"
           >
             <i className="fa-solid fa-bars me-2 fs-5" />
             Meus anúncios
-          </button>
-          <button
-            className="nav-link border-bottom"
-            id="nav-favoritos-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#nav-favoritos"
-            type="button"
-            role="tab"
-            aria-controls="nav-favoritos"
-            aria-selected="false"
-            onClick={() => setCurrentTab('favorite-ads')}
+          </NavLink>
+          <NavLink
+            to="/favorites"
+            activeclassname="active"
+            className="nav-link border-bottom fw-semibold"
           >
             <i className="fa-solid fa-heart me-2 fs-5" />
             Favoritos
-          </button>
+          </NavLink>
           <button
             className="nav-link border-bottom"
             id="nav-config-tab"
@@ -68,6 +51,7 @@ export default function Sidebar({ setCurrentTab, sideBar }) {
             <i className="fa-solid fa-gear me-2 fs-5" />
             Configurações
           </button>
+
           <div className="collapse" id="nav-config">
             <div className="card card-body d-flex flex-column align-items-center border-0 row-gap-3 p-0">
               <button
@@ -106,20 +90,15 @@ export default function Sidebar({ setCurrentTab, sideBar }) {
               </div>
             </div>
           </div>
-          <button
-            className="nav-link border-bottom"
-            id="nav-login-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#nav-login"
-            type="button"
-            role="tab"
-            aria-controls="nav-login"
-            aria-selected="false"
-            onClick={() => setCurrentTab('login')}
+
+          <NavLink
+            to="/login"
+            activeclassname="active"
+            className="nav-link border-bottom fw-semibold"
           >
             <i className="fa-solid fa-circle-user me-2 fs-5" />
             Login
-          </button>
+          </NavLink>
         </div>
       </nav>
     </div>
