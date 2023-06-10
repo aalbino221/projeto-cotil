@@ -22,6 +22,12 @@
   animation: beat 1s infinite;
 }
 
+.btnNoStyle {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
 @keyframes beat {
   0% {
     transform: scale(1);
