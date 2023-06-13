@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 import StateContext from '../../StateContext';
 import alana from '../../assets/alana.png';
 
-export default function Header({ setBar }) {
+export default function Header() {
   const [logged, setLogged] = useContext(StateContext);
   return (
     <div className="container-fluid d-none d-sm-block">
@@ -14,16 +14,6 @@ export default function Header({ setBar }) {
         {/**/}
         <div className="col-2">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center justify-content-center">
-            <li className="nav-item">
-              <a
-                className="nav-link"
-                aria-current="page"
-                href="#"
-                onClick={() => setBar()}
-              >
-                <i className="text-dark fa-solid fa-bars fs-4" />
-              </a>
-            </li>
             <li className="nav-item">
               <a
                 className="nav-link"
@@ -119,7 +109,7 @@ export default function Header({ setBar }) {
               </li>
               <li className="nav-item">
                 <NavLink
-                  to="/login"
+                  to="/login/register"
                   activeclassname="active"
                   className="nav-link fw-semibold text-dark"
                 >

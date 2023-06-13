@@ -59,10 +59,10 @@ export default function Card({ adInfo, id }) {
           className="card-img-top"
           alt="..."
         />
-        <div className="card-body fs-7">
+        <div className="card-body fs-7 d-flex flex-column">
           <h5 className="card-title fs-5">{title}</h5>
           <p className="card-text">{description}</p>
-          <div>
+          <div className="mt-auto">
             {tags.map((tag) => (
               <button
                 key={tag}

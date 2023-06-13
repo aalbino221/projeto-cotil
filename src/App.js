@@ -9,6 +9,7 @@ import NewAd from './components/MyAds/NewAd';
 import Favorites from './components/Favorites/Favorites';
 import Account from './components/Account/Account';
 import Login from './components/Login/Login';
+import Register from './components/Login/Register';
 import StateContext from './StateContext';
 
 function App() {
@@ -43,6 +44,10 @@ function App() {
                       element={<Login />}
                     />
                     <Route
+                      path="/login/register"
+                      element={<Register />}
+                    />
+                    <Route
                       path="/account"
                       element={<Account />}
                     />
@@ -65,7 +70,7 @@ function App() {
                   </Routes>
                 </div>
               </div>
-              <div className="col-xxl-2 col-sm-0 col-0 order-sm-last flex-sm-grow-1" />
+              <div className="col-xxl-1 col-sm-0 col-0 order-sm-last flex-sm-grow-1" />
               <div
                 className="col-lg-2 col-sm-12 p-0 order-sm-first"
                 id="sideWrapper"

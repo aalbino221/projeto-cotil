@@ -1,83 +1,60 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/label-has-associated-control */
+import { NavLink } from 'react-router-dom';
+
 export default function Login() {
   return (
     <div>
-      <h1 className="text-center mb-3">Login</h1>
-      <form className="row g-3">
-        <div className="col-md-6">
-          <label htmlFor="inputEmail4" className="form-label">
-            Email
-          </label>
-          <input type="email" className="form-control" id="inputEmail4" />
-        </div>
-        <div className="col-md-6">
-          <label htmlFor="inputPassword4" className="form-label">
-            Password
-          </label>
-          <input type="password" className="form-control" id="inputPassword4" />
-        </div>
-        <div className="col-12">
-          <label htmlFor="inputAddress" className="form-label">
-            Address
-          </label>
-          <input
-            type="text"
-            className="form-control"
-            id="inputAddress"
-            placeholder="1234 Main St"
-          />
-        </div>
-        <div className="col-12">
-          <label htmlFor="inputAddress2" className="form-label">
-            Address 2
-          </label>
-          <input
-            type="text"
-            className="form-control"
-            id="inputAddress2"
-            placeholder="Apartment, studio, or floor"
-          />
-        </div>
-        <div className="col-md-6">
-          <label htmlFor="inputCity" className="form-label">
-            City
-          </label>
-          <input type="text" className="form-control" id="inputCity" />
-        </div>
-        <div className="col-md-4">
-          <label htmlFor="inputState" className="form-label">
-            State
-          </label>
-          <select id="inputState" className="form-select">
-            <option selected>Choose...</option>
-            <option>...</option>
-          </select>
-        </div>
-        <div className="col-md-2">
-          <label htmlFor="inputZip" className="form-label">
-            Zip
-          </label>
-          <input type="text" className="form-control" id="inputZip" />
-        </div>
-        <div className="col-12">
-          <div className="form-check">
-            <input
-              className="form-check-input"
-              type="checkbox"
-              id="gridCheck"
-            />
-            <label className="form-check-label" htmlFor="gridCheck">
-              Check me out
+      <div className="container d-flex col-lg-6 p-5 mt-5">
+        <form className="row g-3 d-flex justify-content-center align-items-center">
+          <h2 className="text-center mb-3 fw-bold mb-5">ENTRAR</h2>
+          <div className="col-8 text-center">
+            <label
+              htmlFor="inputEmail4"
+              className="form-label "
+            >
+              Email/Telefone
             </label>
+            <input
+              type="email"
+              className="form-control"
+              id="inputEmail4"
+            />
           </div>
-        </div>
-        <div className="col-12">
-          <button type="submit" className="btn btn-primary">
-            Sign in
-          </button>
-        </div>
-      </form>
+          <div className="col-8 text-center mb-5">
+            <label
+              htmlFor="inputPassword4"
+              className="form-label"
+            >
+              Senha
+            </label>
+            <input
+              type="password"
+              className="form-control"
+              id="inputPassword4"
+            />
+          </div>
+          <div className="text-center mt-5">
+            <button
+              type="submit"
+              className="btn btn-danger bg-red col-6 rounded-0"
+            >
+              Entrar
+            </button>
+          </div>
+          <div className="text-center">
+            <p>
+              Não tem uma conta?
+              <NavLink
+                to="/login/register"
+                className="text-red"
+              >
+                Cadastrar
+              </NavLink>
+            </p>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }
